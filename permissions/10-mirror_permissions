@@ -1,2 +1,3 @@
 #!/bin/bash
-chmod --wxr-xr-- hello
+
+chmod --reference=olleh hello && ls -ld hello | cut -c 1-10
