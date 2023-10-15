@@ -1,0 +1,6 @@
+#!/bin/bash
+# Get the mode of the file 'olleh' using stat and cut
+mode=$(stat -c %a olleh)
+# Apply the mode to the file 'hello'
+chmod $mode hello
+
